@@ -3,7 +3,7 @@ import RegisterStyle from '../../pages/Register/Register.module.css';
 import { 
   Tent, Footprints, Mountain, Sun, 
   Landmark, ScrollText, Building2, Users,
-  Utensils, Coffee, Wine,
+  Utensils, Coffee,
   Camera, ShoppingBag, Music,
   CheckCircle2
 } from 'lucide-react';
