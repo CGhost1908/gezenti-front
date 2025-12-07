@@ -1,0 +1,132 @@
+.interest-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.sub-info {
+  font-size: 14px;
+  color: #4a5568;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub-info .count {
+  font-weight: 600;
+  color: #2d3748;
+  background-color: #edf2f7;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.category-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a365d;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 2px solid #e2e8f0;
+  background-color: #f7fafc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4a5568;
+  transition: all 0.2s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: #4299e1;
+  background-color: #ebf8ff;
+  color: #2d3748;
+}
+
+.chip.active {
+  border-color: #4299e1;
+  background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+  color: #2c5aa0;
+  font-weight: 600;
+}
+
+.icon-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.chip.active .icon-base {
+  color: #4299e1;
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4299e1;
+  margin-left: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .chip {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .category-list {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chip {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .sub-info {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,8 @@
+
+npm install react
+npm install @iconify/react @iconify/icons-mdi
+npm install @iconify/react
+npm install --save-dev @iconify/react
+npm install gsap
+npm install motion
+npm install lucide-react
